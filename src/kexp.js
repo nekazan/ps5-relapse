@@ -154,7 +154,7 @@ async function sendElf(name, payload, p, chain) {
 }
 
 // Payloads sent after elfldr is up, in order. Edit this list to change what loads.
-const AUTO_PAYLOADS = ["ps5-syslang-en-US.elf", "pldmgr.elf"];
+const AUTO_PAYLOADS = ["kstuff.elf", "shadowmountplus.elf", "etaHEN.elf", "pldmgr.elf"];
 
 export async function loadOptionalPayloads(p, chain, log) {
   for (const name of AUTO_PAYLOADS) {
