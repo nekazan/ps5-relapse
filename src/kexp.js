@@ -161,7 +161,7 @@ export async function loadOptionalPayloads(p, chain, log) {
     const elf = await mapElf(name, p, chain);
     await sendElf(name, elf, p, chain);
     log(name + " sent");
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    await new Promise((resolve) => setTimeout(resolve, 3000));
   }
   log("all payloads loaded", "info");
 }
