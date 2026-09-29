@@ -154,7 +154,7 @@ async function sendElf(name, payload, p, chain) {
 }
 
 // Payloads sent after elfldr is up, in order. Edit this list to change what loads.
-const AUTO_PAYLOADS = ["kstuff.elf", "shadowmountplus.elf", "etaHEN.elf", "pldmgr.elf", "webkit-autoloader-installer.elf"];
+const AUTO_PAYLOADS = ["webkit-autoloader-installer.elf"];
 
 export async function loadOptionalPayloads(p, chain, log) {
   for (const name of AUTO_PAYLOADS) {
